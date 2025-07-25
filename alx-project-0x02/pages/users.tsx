@@ -26,7 +26,6 @@ const UsersPage: React.FC<UsersPageProps> = ({ users }) => {
   );
 };
 
-// ✅ This is the static generation function the checker expects
 export const getStaticProps = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const data = await res.json();
